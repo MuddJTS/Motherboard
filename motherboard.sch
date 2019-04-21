@@ -36,4 +36,15 @@ F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 2600 4100 50  0001 C CNN
 	1    2800 3050
 	1    0    0    -1  
 $EndComp
+$Comp
+L Components:MCP9600 U?
+U 1 1 5CBBD649
+P 6100 2450
+F 0 "U?" H 6100 3278 50  0000 C CNN
+F 1 "MCP9600" H 6100 3187 50  0000 C CNN
+F 2 "" H 6100 2450 50  0001 C CNN
+F 3 "" H 6100 2450 50  0001 C CNN
+	1    6100 2450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
