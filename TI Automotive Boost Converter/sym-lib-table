@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "TI Automotive Boost Converter")(type Legacy)(uri "${KIPRJMOD}/TI Automotive Boost Converter.lib")(options "")(descr ""))
+)
