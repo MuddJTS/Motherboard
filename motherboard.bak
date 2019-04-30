@@ -184,7 +184,7 @@ F0 "BatteryManager" 50
 F1 "BatteryManager.sch" 50
 $EndSheet
 $Sheet
-S 3200 3300 1000 1250
+S 3200 3300 1000 1100
 U 5CC7AF02
 F0 "PyroDriver" 50
 F1 "PyroDriver.sch" 50
