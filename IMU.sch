@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 8 10
 Title ""
 Date ""
 Rev ""
@@ -14,4 +14,703 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L Device:C C?
+U 1 1 5CC90711
+P 4800 1050
+F 0 "C?" V 4548 1050 50  0000 C CNN
+F 1 "0.1µF" V 4639 1050 50  0000 C CNN
+F 2 "" H 4838 900 50  0001 C CNN
+F 3 "~" H 4800 1050 50  0001 C CNN
+	1    4800 1050
+	0    1    1    0   
+$EndComp
+Text HLabel 1500 4800 0    50   Input ~ 0
+CLK
+Text HLabel 1500 4900 0    50   Input ~ 0
+CS1
+Text HLabel 1500 5000 0    50   Input ~ 0
+CS2
+Text HLabel 1500 5100 0    50   Input ~ 0
+CS3
+Text HLabel 1500 5200 0    50   Input ~ 0
+CS4
+$Comp
+L Sensor_Motion:MPU-9250 U?
+U 1 1 5CC913B0
+P 5100 2250
+F 0 "U?" H 5550 1500 50  0000 C CNN
+F 1 "MPU-9250" H 4800 1500 50  0000 C CNN
+F 2 "Sensor_Motion:InvenSense_QFN-24_3x3mm_P0.4mm" H 5100 1250 50  0001 C CNN
+F 3 "https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf" H 5100 2100 50  0001 C CNN
+	1    5100 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CC924BD
+P 5100 3150
+F 0 "#PWR?" H 5100 2900 50  0001 C CNN
+F 1 "GND" H 5105 2977 50  0000 C CNN
+F 2 "" H 5100 3150 50  0001 C CNN
+F 3 "" H 5100 3150 50  0001 C CNN
+	1    5100 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LP2985-1.8 U?
+U 1 1 5CC92A4A
+P 2150 1850
+F 0 "U?" H 2150 2192 50  0000 C CNN
+F 1 "LP2985-1.8" H 2150 2101 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2150 2175 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lp2985.pdf" H 2150 1850 50  0001 C CNN
+	1    2150 1850
+	1    0    0    -1  
+$EndComp
+Text Label 2750 1750 0    50   ~ 0
+1V8
+Wire Wire Line
+	1750 1750 1550 1750
+Text HLabel 1400 1750 0    50   Input ~ 0
+3V3
+Text HLabel 1400 1850 0    50   Input ~ 0
+PWREN
+Wire Wire Line
+	1400 1850 1750 1850
+$Comp
+L Device:C C?
+U 1 1 5CC934DA
+P 2700 2050
+F 0 "C?" H 2815 2096 50  0000 L CNN
+F 1 "0.01µF" H 2815 2005 50  0000 L CNN
+F 2 "" H 2738 1900 50  0001 C CNN
+F 3 "~" H 2700 2050 50  0001 C CNN
+	1    2700 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 1900 2700 1850
+Wire Wire Line
+	2700 1850 2550 1850
+Wire Wire Line
+	2700 2200 2700 2400
+$Comp
+L power:GND #PWR?
+U 1 1 5CC93F06
+P 2150 2400
+F 0 "#PWR?" H 2150 2150 50  0001 C CNN
+F 1 "GND" H 2155 2227 50  0000 C CNN
+F 2 "" H 2150 2400 50  0001 C CNN
+F 3 "" H 2150 2400 50  0001 C CNN
+	1    2150 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5CC943CC
+P 3400 2050
+F 0 "C?" H 3518 2096 50  0000 L CNN
+F 1 "2.2µF" H 3518 2005 50  0000 L CNN
+F 2 "" H 3438 1900 50  0001 C CNN
+F 3 "~" H 3400 2050 50  0001 C CNN
+	1    3400 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 1750 3400 1900
+Wire Wire Line
+	2550 1750 3400 1750
+Wire Wire Line
+	3400 2200 3400 2400
+$Comp
+L power:GND #PWR?
+U 1 1 5CC94D68
+P 3400 2400
+F 0 "#PWR?" H 3400 2150 50  0001 C CNN
+F 1 "GND" H 3405 2227 50  0000 C CNN
+F 2 "" H 3400 2400 50  0001 C CNN
+F 3 "" H 3400 2400 50  0001 C CNN
+	1    3400 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CC94DD6
+P 2700 2400
+F 0 "#PWR?" H 2700 2150 50  0001 C CNN
+F 1 "GND" H 2705 2227 50  0000 C CNN
+F 2 "" H 2700 2400 50  0001 C CNN
+F 3 "" H 2700 2400 50  0001 C CNN
+	1    2700 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 2400 2150 2350
+Wire Wire Line
+	1550 1950 1550 1750
+Connection ~ 1550 1750
+Wire Wire Line
+	1550 1750 1400 1750
+Wire Wire Line
+	1550 2250 1550 2350
+Wire Wire Line
+	1550 2350 2150 2350
+Connection ~ 2150 2350
+Wire Wire Line
+	2150 2350 2150 2150
+$Comp
+L Device:C C?
+U 1 1 5CC95ED0
+P 1550 2100
+F 0 "C?" H 1665 2146 50  0000 L CNN
+F 1 "1µF" H 1665 2055 50  0000 L CNN
+F 2 "" H 1588 1950 50  0001 C CNN
+F 3 "~" H 1550 2100 50  0001 C CNN
+	1    1550 2100
+	1    0    0    -1  
+$EndComp
+Text Label 5150 850  0    50   ~ 0
+1V8
+Wire Wire Line
+	5150 850  5150 1050
+Wire Wire Line
+	5150 1050 5000 1050
+Wire Wire Line
+	5000 1350 5000 1050
+Connection ~ 5000 1050
+Wire Wire Line
+	5000 1050 4950 1050
+Wire Wire Line
+	5150 1050 5200 1050
+Wire Wire Line
+	5200 1050 5200 1350
+Connection ~ 5150 1050
+$Comp
+L power:GND #PWR?
+U 1 1 5CC96AE4
+P 4550 1150
+F 0 "#PWR?" H 4550 900 50  0001 C CNN
+F 1 "GND" H 4555 977 50  0000 C CNN
+F 2 "" H 4550 1150 50  0001 C CNN
+F 3 "" H 4550 1150 50  0001 C CNN
+	1    4550 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 1150 4550 1050
+Wire Wire Line
+	4550 1050 4650 1050
+$Comp
+L power:GND #PWR?
+U 1 1 5CC97483
+P 5800 2650
+F 0 "#PWR?" H 5800 2400 50  0001 C CNN
+F 1 "GND" V 5805 2522 50  0000 R CNN
+F 2 "" H 5800 2650 50  0001 C CNN
+F 3 "" H 5800 2650 50  0001 C CNN
+	1    5800 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CC9776E
+P 6200 2450
+F 0 "C?" V 5948 2450 50  0000 C CNN
+F 1 "0.1µF" V 6039 2450 50  0000 C CNN
+F 2 "" H 6238 2300 50  0001 C CNN
+F 3 "~" H 6200 2450 50  0001 C CNN
+	1    6200 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CC97820
+P 6350 2450
+F 0 "#PWR?" H 6350 2200 50  0001 C CNN
+F 1 "GND" V 6355 2322 50  0000 R CNN
+F 2 "" H 6350 2450 50  0001 C CNN
+F 3 "" H 6350 2450 50  0001 C CNN
+	1    6350 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6050 2450 5800 2450
+$Comp
+L Device:C C?
+U 1 1 5CC989C6
+P 8500 1050
+F 0 "C?" V 8248 1050 50  0000 C CNN
+F 1 "0.1µF" V 8339 1050 50  0000 C CNN
+F 2 "" H 8538 900 50  0001 C CNN
+F 3 "~" H 8500 1050 50  0001 C CNN
+	1    8500 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensor_Motion:MPU-9250 U?
+U 1 1 5CC989D1
+P 8800 2250
+F 0 "U?" H 9250 1500 50  0000 C CNN
+F 1 "MPU-9250" H 8500 1500 50  0000 C CNN
+F 2 "Sensor_Motion:InvenSense_QFN-24_3x3mm_P0.4mm" H 8800 1250 50  0001 C CNN
+F 3 "https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf" H 8800 2100 50  0001 C CNN
+	1    8800 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CC989D8
+P 8800 3150
+F 0 "#PWR?" H 8800 2900 50  0001 C CNN
+F 1 "GND" H 8805 2977 50  0000 C CNN
+F 2 "" H 8800 3150 50  0001 C CNN
+F 3 "" H 8800 3150 50  0001 C CNN
+	1    8800 3150
+	1    0    0    -1  
+$EndComp
+Text Label 8850 850  0    50   ~ 0
+1V8
+Wire Wire Line
+	8850 850  8850 1050
+Wire Wire Line
+	8850 1050 8700 1050
+Wire Wire Line
+	8700 1350 8700 1050
+Connection ~ 8700 1050
+Wire Wire Line
+	8700 1050 8650 1050
+Wire Wire Line
+	8850 1050 8900 1050
+Wire Wire Line
+	8900 1050 8900 1350
+Connection ~ 8850 1050
+$Comp
+L power:GND #PWR?
+U 1 1 5CC989E7
+P 8250 1150
+F 0 "#PWR?" H 8250 900 50  0001 C CNN
+F 1 "GND" H 8255 977 50  0000 C CNN
+F 2 "" H 8250 1150 50  0001 C CNN
+F 3 "" H 8250 1150 50  0001 C CNN
+	1    8250 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 1150 8250 1050
+Wire Wire Line
+	8250 1050 8350 1050
+$Comp
+L power:GND #PWR?
+U 1 1 5CC989EF
+P 9500 2650
+F 0 "#PWR?" H 9500 2400 50  0001 C CNN
+F 1 "GND" V 9505 2522 50  0000 R CNN
+F 2 "" H 9500 2650 50  0001 C CNN
+F 3 "" H 9500 2650 50  0001 C CNN
+	1    9500 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CC989F5
+P 9900 2450
+F 0 "C?" V 9648 2450 50  0000 C CNN
+F 1 "0.1µF" V 9739 2450 50  0000 C CNN
+F 2 "" H 9938 2300 50  0001 C CNN
+F 3 "~" H 9900 2450 50  0001 C CNN
+	1    9900 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CC989FC
+P 10050 2450
+F 0 "#PWR?" H 10050 2200 50  0001 C CNN
+F 1 "GND" V 10055 2322 50  0000 R CNN
+F 2 "" H 10050 2450 50  0001 C CNN
+F 3 "" H 10050 2450 50  0001 C CNN
+	1    10050 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9750 2450 9500 2450
+$Comp
+L Device:C C?
+U 1 1 5CC98E14
+P 4850 3850
+F 0 "C?" V 4598 3850 50  0000 C CNN
+F 1 "0.1µF" V 4689 3850 50  0000 C CNN
+F 2 "" H 4888 3700 50  0001 C CNN
+F 3 "~" H 4850 3850 50  0001 C CNN
+	1    4850 3850
+	0    1    1    0   
+$EndComp
+Text HLabel 1600 6600 0    50   Output ~ 0
+SDO
+Text HLabel 1500 4700 0    50   Input ~ 0
+SDI
+$Comp
+L Sensor_Motion:MPU-9250 U?
+U 1 1 5CC98E1F
+P 5150 5050
+F 0 "U?" H 5600 4300 50  0000 C CNN
+F 1 "MPU-9250" H 4850 4300 50  0000 C CNN
+F 2 "Sensor_Motion:InvenSense_QFN-24_3x3mm_P0.4mm" H 5150 4050 50  0001 C CNN
+F 3 "https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf" H 5150 4900 50  0001 C CNN
+	1    5150 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CC98E26
+P 5150 5950
+F 0 "#PWR?" H 5150 5700 50  0001 C CNN
+F 1 "GND" H 5155 5777 50  0000 C CNN
+F 2 "" H 5150 5950 50  0001 C CNN
+F 3 "" H 5150 5950 50  0001 C CNN
+	1    5150 5950
+	1    0    0    -1  
+$EndComp
+Text Label 5200 3650 0    50   ~ 0
+1V8
+Wire Wire Line
+	5200 3650 5200 3850
+Wire Wire Line
+	5200 3850 5050 3850
+Wire Wire Line
+	5050 4150 5050 3850
+Connection ~ 5050 3850
+Wire Wire Line
+	5050 3850 5000 3850
+Wire Wire Line
+	5200 3850 5250 3850
+Wire Wire Line
+	5250 3850 5250 4150
+Connection ~ 5200 3850
+$Comp
+L power:GND #PWR?
+U 1 1 5CC98E35
+P 4600 3950
+F 0 "#PWR?" H 4600 3700 50  0001 C CNN
+F 1 "GND" H 4605 3777 50  0000 C CNN
+F 2 "" H 4600 3950 50  0001 C CNN
+F 3 "" H 4600 3950 50  0001 C CNN
+	1    4600 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3950 4600 3850
+Wire Wire Line
+	4600 3850 4700 3850
+$Comp
+L power:GND #PWR?
+U 1 1 5CC98E3D
+P 5850 5450
+F 0 "#PWR?" H 5850 5200 50  0001 C CNN
+F 1 "GND" V 5855 5322 50  0000 R CNN
+F 2 "" H 5850 5450 50  0001 C CNN
+F 3 "" H 5850 5450 50  0001 C CNN
+	1    5850 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CC98E43
+P 6250 5250
+F 0 "C?" V 5998 5250 50  0000 C CNN
+F 1 "0.1µF" V 6089 5250 50  0000 C CNN
+F 2 "" H 6288 5100 50  0001 C CNN
+F 3 "~" H 6250 5250 50  0001 C CNN
+	1    6250 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CC98E4A
+P 6400 5250
+F 0 "#PWR?" H 6400 5000 50  0001 C CNN
+F 1 "GND" V 6405 5122 50  0000 R CNN
+F 2 "" H 6400 5250 50  0001 C CNN
+F 3 "" H 6400 5250 50  0001 C CNN
+	1    6400 5250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6100 5250 5850 5250
+Text HLabel 1500 5300 0    50   Input ~ 0
+SYNC
+$Comp
+L Device:C C?
+U 1 1 5CC99650
+P 8550 3900
+F 0 "C?" V 8298 3900 50  0000 C CNN
+F 1 "0.1µF" V 8389 3900 50  0000 C CNN
+F 2 "" H 8588 3750 50  0001 C CNN
+F 3 "~" H 8550 3900 50  0001 C CNN
+	1    8550 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensor_Motion:MPU-9250 U?
+U 1 1 5CC9965B
+P 8850 5100
+F 0 "U?" H 9300 4350 50  0000 C CNN
+F 1 "MPU-9250" H 8550 4350 50  0000 C CNN
+F 2 "Sensor_Motion:InvenSense_QFN-24_3x3mm_P0.4mm" H 8850 4100 50  0001 C CNN
+F 3 "https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf" H 8850 4950 50  0001 C CNN
+	1    8850 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CC99662
+P 8850 6000
+F 0 "#PWR?" H 8850 5750 50  0001 C CNN
+F 1 "GND" H 8855 5827 50  0000 C CNN
+F 2 "" H 8850 6000 50  0001 C CNN
+F 3 "" H 8850 6000 50  0001 C CNN
+	1    8850 6000
+	1    0    0    -1  
+$EndComp
+Text Label 8900 3700 0    50   ~ 0
+1V8
+Wire Wire Line
+	8900 3700 8900 3900
+Wire Wire Line
+	8900 3900 8750 3900
+Wire Wire Line
+	8750 4200 8750 3900
+Connection ~ 8750 3900
+Wire Wire Line
+	8750 3900 8700 3900
+Wire Wire Line
+	8900 3900 8950 3900
+Wire Wire Line
+	8950 3900 8950 4200
+Connection ~ 8900 3900
+$Comp
+L power:GND #PWR?
+U 1 1 5CC99671
+P 8300 4000
+F 0 "#PWR?" H 8300 3750 50  0001 C CNN
+F 1 "GND" H 8305 3827 50  0000 C CNN
+F 2 "" H 8300 4000 50  0001 C CNN
+F 3 "" H 8300 4000 50  0001 C CNN
+	1    8300 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 4000 8300 3900
+Wire Wire Line
+	8300 3900 8400 3900
+$Comp
+L power:GND #PWR?
+U 1 1 5CC99679
+P 9550 5500
+F 0 "#PWR?" H 9550 5250 50  0001 C CNN
+F 1 "GND" V 9555 5372 50  0000 R CNN
+F 2 "" H 9550 5500 50  0001 C CNN
+F 3 "" H 9550 5500 50  0001 C CNN
+	1    9550 5500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CC9967F
+P 9950 5300
+F 0 "C?" V 9698 5300 50  0000 C CNN
+F 1 "0.1µF" V 9789 5300 50  0000 C CNN
+F 2 "" H 9988 5150 50  0001 C CNN
+F 3 "~" H 9950 5300 50  0001 C CNN
+	1    9950 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CC99686
+P 10100 5300
+F 0 "#PWR?" H 10100 5050 50  0001 C CNN
+F 1 "GND" V 10105 5172 50  0000 R CNN
+F 2 "" H 10100 5300 50  0001 C CNN
+F 3 "" H 10100 5300 50  0001 C CNN
+	1    10100 5300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9800 5300 9550 5300
+$Comp
+L Components:74LVC4245A U?
+U 1 1 5CC9E670
+P 2200 5250
+F 0 "U?" H 2150 6465 50  0000 C CNN
+F 1 "74LVC4245A" H 2150 6374 50  0000 C CNN
+F 2 "" H 2300 4700 50  0001 C CNN
+F 3 "" H 2300 4700 50  0001 C CNN
+	1    2200 5250
+	1    0    0    -1  
+$EndComp
+Text HLabel 1500 4300 0    50   Input ~ 0
+3V3
+Text Label 2900 4250 0    50   ~ 0
+1V8
+Wire Wire Line
+	2900 4250 2900 4300
+Wire Wire Line
+	2900 4400 2800 4400
+Wire Wire Line
+	2800 4300 2900 4300
+Connection ~ 2900 4300
+Wire Wire Line
+	2900 4300 2900 4400
+Text HLabel 1500 4400 0    50   Input ~ 0
+3V3
+$Comp
+L power:GND #PWR?
+U 1 1 5CCA1036
+P 2800 4500
+F 0 "#PWR?" H 2800 4250 50  0001 C CNN
+F 1 "GND" V 2805 4372 50  0000 R CNN
+F 2 "" H 2800 4500 50  0001 C CNN
+F 3 "" H 2800 4500 50  0001 C CNN
+	1    2800 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CCA122E
+P 2800 5700
+F 0 "#PWR?" H 2800 5450 50  0001 C CNN
+F 1 "GND" V 2805 5572 50  0000 R CNN
+F 2 "" H 2800 5700 50  0001 C CNN
+F 3 "" H 2800 5700 50  0001 C CNN
+	1    2800 5700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CCA12D2
+P 1500 5700
+F 0 "#PWR?" H 1500 5450 50  0001 C CNN
+F 1 "GND" V 1505 5572 50  0000 R CNN
+F 2 "" H 1500 5700 50  0001 C CNN
+F 3 "" H 1500 5700 50  0001 C CNN
+	1    1500 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CCA145D
+P 1500 5600
+F 0 "#PWR?" H 1500 5350 50  0001 C CNN
+F 1 "GND" V 1505 5472 50  0000 R CNN
+F 2 "" H 1500 5600 50  0001 C CNN
+F 3 "" H 1500 5600 50  0001 C CNN
+	1    1500 5600
+	0    1    1    0   
+$EndComp
+Text Label 2800 4700 0    50   ~ 0
+SDI_1V8
+Text Label 2800 4800 0    50   ~ 0
+CLK_1V8
+Text Label 2800 4900 0    50   ~ 0
+CS1_1V8
+Text Label 2800 5000 0    50   ~ 0
+CS2_1V8
+Text Label 2800 5100 0    50   ~ 0
+CS3_1V8
+Text Label 2800 5200 0    50   ~ 0
+CS4_1V8
+Text Label 2800 5300 0    50   ~ 0
+SYNC_1V8
+Text Label 4450 4750 2    50   ~ 0
+SDI_1V8
+Text Label 4400 1950 2    50   ~ 0
+SDI_1V8
+Text Label 8100 1950 2    50   ~ 0
+SDI_1V8
+Text Label 8150 4800 2    50   ~ 0
+SDI_1V8
+Text Label 4400 2150 2    50   ~ 0
+CLK_1V8
+Text Label 8100 2150 2    50   ~ 0
+CLK_1V8
+Text Label 8150 5000 2    50   ~ 0
+CLK_1V8
+Text Label 4450 4950 2    50   ~ 0
+CLK_1V8
+Text Label 4400 2250 2    50   ~ 0
+CS1_1V8
+Text Label 8100 2250 2    50   ~ 0
+CS2_1V8
+Text Label 4450 5050 2    50   ~ 0
+CS3_1V8
+Text Label 8150 5100 2    50   ~ 0
+CS4_1V8
+Text Label 4450 5250 2    50   ~ 0
+SYNC_1V8
+Text Label 4400 2450 2    50   ~ 0
+SYNC_1V8
+Text Label 8100 2450 2    50   ~ 0
+SYNC_1V8
+Text Label 8150 5300 2    50   ~ 0
+SYNC_1V8
+Text Label 4450 4850 2    50   ~ 0
+SDO_1V8
+Text Label 4400 2050 2    50   ~ 0
+SDO_1V8
+Text Label 8100 2050 2    50   ~ 0
+SDO_1V8
+Text Label 8150 4900 2    50   ~ 0
+SDO_1V8
+Text Label 2400 6600 0    50   ~ 0
+SDO_1V8
+$Comp
+L Logic_LevelTranslator:SN74LVC1T45DBV U?
+U 1 1 5CCA4EB8
+P 2000 6600
+F 0 "U?" H 2250 6250 50  0000 L CNN
+F 1 "SN74LVC1T45DBV" H 2250 6150 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 2000 6150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf" H 1100 5950 50  0001 C CNN
+	1    2000 6600
+	1    0    0    -1  
+$EndComp
+Text HLabel 1900 6200 1    50   Input ~ 0
+3V3
+Text Label 2100 6200 0    50   ~ 0
+1V8
+$Comp
+L power:GND #PWR?
+U 1 1 5CCA64D9
+P 2000 7000
+F 0 "#PWR?" H 2000 6750 50  0001 C CNN
+F 1 "GND" H 2005 6827 50  0000 C CNN
+F 2 "" H 2000 7000 50  0001 C CNN
+F 3 "" H 2000 7000 50  0001 C CNN
+	1    2000 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CCA67A2
+P 1600 6800
+F 0 "#PWR?" H 1600 6550 50  0001 C CNN
+F 1 "GND" V 1605 6672 50  0000 R CNN
+F 2 "" H 1600 6800 50  0001 C CNN
+F 3 "" H 1600 6800 50  0001 C CNN
+	1    1600 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CCA747A
+P 1500 5400
+F 0 "#PWR?" H 1500 5150 50  0001 C CNN
+F 1 "GND" V 1505 5272 50  0000 R CNN
+F 2 "" H 1500 5400 50  0001 C CNN
+F 3 "" H 1500 5400 50  0001 C CNN
+	1    1500 5400
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

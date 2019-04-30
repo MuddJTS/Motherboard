@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 8
+Sheet 6 10
 Title ""
 Date ""
 Rev ""
@@ -47,17 +47,6 @@ Wire Wire Line
 Wire Wire Line
 	5000 5050 5000 5000
 Connection ~ 4950 5050
-$Comp
-L power:+BATT #PWR09
-U 1 1 5CC7C872
-P 4950 1750
-F 0 "#PWR09" H 4950 1600 50  0001 C CNN
-F 1 "+BATT" H 4965 1923 50  0000 C CNN
-F 2 "" H 4950 1750 50  0001 C CNN
-F 3 "" H 4950 1750 50  0001 C CNN
-	1    4950 1750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4950 1950 4900 1950
 Wire Wire Line
@@ -270,50 +259,6 @@ F 1 "0.01Ω" H 7470 4055 50  0000 L CNN
 F 2 "" V 7330 4100 50  0001 C CNN
 F 3 "~" H 7400 4100 50  0001 C CNN
 	1    7400 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+BATT #PWR011
-U 1 1 5CC948C2
-P 6250 1900
-F 0 "#PWR011" H 6250 1750 50  0001 C CNN
-F 1 "+BATT" H 6265 2073 50  0000 C CNN
-F 2 "" H 6250 1900 50  0001 C CNN
-F 3 "" H 6250 1900 50  0001 C CNN
-	1    6250 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+BATT #PWR013
-U 1 1 5CC949A5
-P 7400 2550
-F 0 "#PWR013" H 7400 2400 50  0001 C CNN
-F 1 "+BATT" H 7415 2723 50  0000 C CNN
-F 2 "" H 7400 2550 50  0001 C CNN
-F 3 "" H 7400 2550 50  0001 C CNN
-	1    7400 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+BATT #PWR012
-U 1 1 5CC94A70
-P 6250 3250
-F 0 "#PWR012" H 6250 3100 50  0001 C CNN
-F 1 "+BATT" H 6265 3423 50  0000 C CNN
-F 2 "" H 6250 3250 50  0001 C CNN
-F 3 "" H 6250 3250 50  0001 C CNN
-	1    6250 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+BATT #PWR014
-U 1 1 5CC94B3B
-P 7400 3950
-F 0 "#PWR014" H 7400 3800 50  0001 C CNN
-F 1 "+BATT" H 7415 4123 50  0000 C CNN
-F 2 "" H 7400 3950 50  0001 C CNN
-F 3 "" H 7400 3950 50  0001 C CNN
-	1    7400 3950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -653,28 +598,6 @@ F 3 "" H 10250 2150 50  0001 C CNN
 	1    10250 2150
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR017
-U 1 1 5CCF4092
-P 10250 950
-F 0 "#PWR017" H 10250 800 50  0001 C CNN
-F 1 "+5V" H 10265 1123 50  0000 C CNN
-F 2 "" H 10250 950 50  0001 C CNN
-F 3 "" H 10250 950 50  0001 C CNN
-	1    10250 950 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR015
-U 1 1 5CCF41F9
-P 8800 950
-F 0 "#PWR015" H 8800 800 50  0001 C CNN
-F 1 "+5V" H 8815 1123 50  0000 C CNN
-F 2 "" H 8800 950 50  0001 C CNN
-F 3 "" H 8800 950 50  0001 C CNN
-	1    8800 950 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8800 950  8800 1000
 Wire Wire Line
@@ -895,4 +818,18 @@ F 3 "~" H 7300 4550 50  0001 C CNN
 $EndComp
 Text Notes 4900 5550 0    50   ~ 0
 Overcurrent threshold set to 6.5 amps. Traces designed for 4 amps continuous.
+Text HLabel 8800 950  1    50   Input ~ 0
+5V
+Text HLabel 4950 1750 1    50   Input ~ 0
+Vin
+Text HLabel 6250 1900 1    50   Input ~ 0
+Vin
+Text HLabel 7400 2550 1    50   Input ~ 0
+Vin
+Text HLabel 6250 3250 1    50   Input ~ 0
+Vin
+Text HLabel 7400 3950 1    50   Input ~ 0
+Vin
+Text HLabel 10250 950  1    50   Input ~ 0
+5V
 $EndSCHEMATC
