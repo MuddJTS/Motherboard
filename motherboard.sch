@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -17,23 +17,12 @@ $EndDescr
 $Comp
 L Device:Battery BT1
 U 1 1 5CB27ABD
-P 1650 1850
-F 0 "BT1" H 1758 1896 50  0000 L CNN
-F 1 "Battery" H 1758 1805 50  0000 L CNN
-F 2 "LEDs:LED_Cree-XB" V 1650 1910 50  0001 C CNN
-F 3 "~" V 1650 1910 50  0001 C CNN
-	1    1650 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L MCU_Module:Arduino_UNO_R3 A1
-U 1 1 5CB97541
-P 2950 4700
-F 0 "A1" H 2950 5878 50  0000 C CNN
-F 1 "Arduino_UNO_R3" H 2950 5787 50  0000 C CNN
-F 2 "Module:Arduino_UNO_R3" H 3100 3650 50  0001 L CNN
-F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 2750 5750 50  0001 C CNN
-	1    2950 4700
+P 1250 1950
+F 0 "BT1" H 1358 1996 50  0000 L CNN
+F 1 "Battery" H 1358 1905 50  0000 L CNN
+F 2 "LEDs:LED_Cree-XB" V 1250 2010 50  0001 C CNN
+F 3 "~" V 1250 2010 50  0001 C CNN
+	1    1250 1950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -125,12 +114,12 @@ $EndSheet
 $Comp
 L Device:Battery BT2
 U 1 1 5CC67A4D
-P 2250 1850
-F 0 "BT2" H 2358 1896 50  0000 L CNN
-F 1 "Battery" H 2358 1805 50  0000 L CNN
-F 2 "LEDs:LED_Cree-XB" V 2250 1910 50  0001 C CNN
-F 3 "~" V 2250 1910 50  0001 C CNN
-	1    2250 1850
+P 1850 1950
+F 0 "BT2" H 1958 1996 50  0000 L CNN
+F 1 "Battery" H 1958 1905 50  0000 L CNN
+F 2 "LEDs:LED_Cree-XB" V 1850 2010 50  0001 C CNN
+F 3 "~" V 1850 2010 50  0001 C CNN
+	1    1850 1950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -188,4 +177,16 @@ Text GLabel 8850 5500 0    50   Input ~ 0
 APRS_EN
 Wire Wire Line
 	8850 5500 8950 5500
+$Sheet
+S 2850 2700 1050 800 
+U 5CC7AE57
+F0 "BatteryManager" 50
+F1 "BatteryManager.sch" 50
+$EndSheet
+$Sheet
+S 2450 5350 1650 1050
+U 5CC7AF02
+F0 "PyroDriver" 50
+F1 "PyroDriver.sch" 50
+$EndSheet
 $EndSCHEMATC
