@@ -47,7 +47,7 @@ U 1 1 5CCC8354
 P 6450 2800
 F 0 "J3" H 6549 2776 50  0000 L CNN
 F 1 "Conn_Coaxial" H 6549 2685 50  0000 L CNN
-F 2 "" H 6450 2800 50  0001 C CNN
+F 2 "Connectors_Molex:Molex_Microcoaxial_RF" H 6450 2800 50  0001 C CNN
 F 3 " ~" H 6450 2800 50  0001 C CNN
 	1    6450 2800
 	1    0    0    -1  
@@ -105,7 +105,7 @@ U 1 1 5CCD0B72
 P 3700 2700
 F 0 "BT3" H 3818 2796 50  0000 L CNN
 F 1 "Battery_Cell" H 3818 2705 50  0000 L CNN
-F 2 "" V 3700 2760 50  0001 C CNN
+F 2 "Battery_Holders:Keystone_103_1x20mm-CoinCell" V 3700 2760 50  0001 C CNN
 F 3 "~" V 3700 2760 50  0001 C CNN
 	1    3700 2700
 	1    0    0    -1  

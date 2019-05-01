@@ -48,7 +48,7 @@ AR Path="/5CCAFA86" Ref="J?"  Part="1"
 AR Path="/5CCAF9E6/5CCAFA86" Ref="J4"  Part="1" 
 F 0 "J4" H 6849 3176 50  0000 L CNN
 F 1 "Conn_Coaxial" H 6849 3085 50  0000 L CNN
-F 2 "" H 6750 3200 50  0001 C CNN
+F 2 "Connectors_Molex:Molex_Microcoaxial_RF" H 6750 3200 50  0001 C CNN
 F 3 " ~" H 6750 3200 50  0001 C CNN
 	1    6750 3200
 	1    0    0    -1  
@@ -85,7 +85,7 @@ AR Path="/5CCAFA9A" Ref="C?"  Part="1"
 AR Path="/5CCAF9E6/5CCAFA9A" Ref="C25"  Part="1" 
 F 0 "C25" H 4365 3496 50  0000 L CNN
 F 1 "0.1uF" H 4365 3405 50  0000 L CNN
-F 2 "" H 4288 3300 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4288 3300 50  0001 C CNN
 F 3 "~" H 4250 3450 50  0001 C CNN
 	1    4250 3450
 	1    0    0    -1  
@@ -99,7 +99,7 @@ AR Path="/5CCAFAA2" Ref="C?"  Part="1"
 AR Path="/5CCAF9E6/5CCAFAA2" Ref="C26"  Part="1" 
 F 0 "C26" H 4818 3496 50  0000 L CNN
 F 1 "10uF" H 4818 3405 50  0000 L CNN
-F 2 "" H 4738 3300 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4738 3300 50  0001 C CNN
 F 3 "~" H 4700 3450 50  0001 C CNN
 	1    4700 3450
 	1    0    0    -1  
