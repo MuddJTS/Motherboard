@@ -4,21 +4,21 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 10
+Sheet 4 11
 Title ""
-Date ""
+Date "2019-04-30"
 Rev ""
-Comp ""
+Comp "Erik Meike"
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Components:TPS61175 U6
+L Components:TPS61175 U5
 U 1 1 5CC5470E
 P 5400 2550
-F 0 "U6" H 5700 2000 50  0000 C CNN
+F 0 "U5" H 5700 2000 50  0000 C CNN
 F 1 "TPS61175" H 5400 3200 50  0000 C CNN
 F 2 "" H 5400 2550 50  0001 C CNN
 F 3 "" H 5400 2550 50  0001 C CNN
