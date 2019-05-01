@@ -537,4 +537,20 @@ Wire Wire Line
 	7700 5500 7700 5550
 Wire Wire Line
 	7700 5550 8000 5550
+Text GLabel 7900 5700 0    50   Input ~ 0
+ACCEL_SELF_TEST
+Text GLabel 7900 5850 0    50   Output ~ 0
+ACCEL_X
+Text GLabel 7900 5950 0    50   Output ~ 0
+ACCEL_Y
+Text GLabel 7900 6050 0    50   Output ~ 0
+ACCEL_Z
+Wire Wire Line
+	7900 6050 8000 6050
+Wire Wire Line
+	8000 5950 7900 5950
+Wire Wire Line
+	7900 5850 8000 5850
+Wire Wire Line
+	8000 5700 7900 5700
 $EndSCHEMATC
