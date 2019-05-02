@@ -514,7 +514,7 @@ Systron Donner IMU Connector\n(Populate either this or IMUs)\n
 $Sheet
 S 8000 5450 800  700 
 U 5CD2B640
-F0 "100gAccel" 50
+F0 "200gAccel" 50
 F1 "200gAccel.sch" 50
 F2 "X" O L 8000 5850 50 
 F3 "Y" O L 8000 5950 50 

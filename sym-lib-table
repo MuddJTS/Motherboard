@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name Components)(type Legacy)(uri /Users/erik/ownCloud/HMC/Rocketry/motherboard/motherboard/Components.lib)(options "")(descr ""))
+  (lib (name motherboard-rescue)(type Legacy)(uri ${KIPRJMOD}/motherboard-rescue.lib)(options "")(descr ""))
 )
