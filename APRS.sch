@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 11
+Sheet 9 12
 Title ""
 Date "2019-04-30"
 Rev ""
@@ -22,7 +22,7 @@ AR Path="/5CCAFA73" Ref="U?"  Part="1"
 AR Path="/5CCAF9E6/5CCAFA73" Ref="U19"  Part="1" 
 F 0 "U19" H 5800 3365 50  0000 C CNN
 F 1 "HX1-114.390-3" H 5800 3274 50  0000 C CNN
-F 2 "" H 5800 3100 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x07_Pitch2.54mm" H 5800 3100 50  0001 C CNN
 F 3 "" H 5800 3100 50  0001 C CNN
 	1    5800 3100
 	1    0    0    -1  
